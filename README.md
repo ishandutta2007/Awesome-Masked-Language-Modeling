@@ -1,10 +1,12 @@
 # Awesome-Masked-Language-Modeling
 
-#
+## Awesome-Masked-Language-Modeling-Evolution: Masked Language Modeling: History, Progression, Variants, & Applications
 
-# Awesome-Masked-Language-Modeling-Evolution## Masked Language Modeling: History, Progression, Variants, & Applications
 **Masked Language Modeling (MLM)** represents a foundational paradigm shift in the self-supervised pre-training of natural language processing (NLP) models. Formally popularized by Devlin et al. (Google AI Language) in October 2018 ("BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"), MLM established a powerful bidirectional alternative to classic autoregressive (left-to-right) language modeling. Prior to MLM, language models were restricted to unidirectional contexts to prevent tokens from "seeing themselves" in upcoming layers. MLM inverted this practice by introducing a **cloze-style task**, corrupting a fixed percentage of input tokens and forcing the model to reconstruct them using both **left and right contexts simultaneously**, unlocking deep bidirectional representations.
----## 1. The Macro Chronological Evolution
+
+---
+
+## 1. The Macro Chronological Evolution
 The implementation of self-supervised representation learning has transitioned from static word vectors to deep bidirectional contexts, shifting toward modern sample-efficient replacement detection and unified multi-task architectures.
 
 

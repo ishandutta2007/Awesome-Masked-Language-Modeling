@@ -8,7 +8,7 @@
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 🕰️ 1. The Macro Chronological Evolution
 The implementation of self-supervised representation learning has transitioned from static word vectors to deep bidirectional contexts, shifting toward modern sample-efficient replacement detection and unified multi-task architectures.
 
 
@@ -26,7 +26,7 @@ flowchart LR
 
 ---
 
-## 2. Core Mathematical Structure & Training Primitives
+## 🧮 2. Core Mathematical Structure & Training Primitives
 
 The core architecture of MLM parameterizes a network to predict a categorical distribution over a vocabulary for corrupted positions.
 
@@ -37,7 +37,7 @@ The core architecture of MLM parameterizes a network to predict a categorical di
 
 ---
 
-## 3. High-Capacity Architectural & Tokenization Variants
+## 🚀 3. High-Capacity Architectural & Tokenization Variants
 
 Depending on linguistic structures, computational constraints, or cross-modal requirements, the baseline MLM framework requires structural modifications.
 
@@ -59,7 +59,7 @@ flowchart TB
 
 ---
 
-## 4. Production Engineering Challenges & Hardware Solutions
+## 🏭 4. Production Engineering Challenges & Hardware Solutions
 
 Deploying and scaling Masked Language Models across large production infrastructures presents distinct algorithmic constraints and optimization barriers.
 
@@ -70,7 +70,7 @@ Deploying and scaling Masked Language Models across large production infrastruct
 
 ---
 
-## 5. Frontier Real-World AI Infrastructure Applications
+## 🔭 5. Frontier Real-World AI Infrastructure Applications
 
 | Application Area | Application Details | Year First Used | Paper First Used |
 | :--- | :--- | :--- | :--- |
@@ -80,7 +80,7 @@ Deploying and scaling Masked Language Models across large production infrastruct
 
 ---
 
-## References
+## 📚 References
 
 1. Devlin, J., Chang, M. W., Lee, K., & Toutanova, K. (2018). BERT: Pre-training of deep bidirectional transformers for language understanding. *arXiv preprint arXiv:1810.04805*.
 2. Liu, Y., et al. (2019). RoBERTa: A robustly optimized BERT pretraining approach. *arXiv preprint arXiv:1907.11692*.

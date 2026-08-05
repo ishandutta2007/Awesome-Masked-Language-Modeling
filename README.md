@@ -9,8 +9,10 @@ The implementation of self-supervised representation learning has transitioned f
 
 
 ```mermaid
-[Static Word Vectors (Word2Vec, 2013)] ───> [Autoregressive LM (GPT-1, 2018)] ───> [Masked LM (BERT, 2018)] ───> [Replaced Token Detection (ELECTRA, 2020)]
-(Context-Independent Lookups) (Unidirectional Left-to-Right) (Bidirectional Cloze Task) (Sample-Efficient Discriminator)
+flowchart LR
+    A["Static Word Vectors (Word2Vec, 2013)<br>(Context-Independent Lookups)"] --> B["Autoregressive LM (GPT-1, 2018)<br>(Unidirectional Left-to-Right)"]
+    B --> C["Masked LM (BERT, 2018)<br>(Bidirectional Cloze Task)"]
+    C --> D["Replaced Token Detection (ELECTRA, 2020)<br>(Sample-Efficient Discriminator)"]
 ```
 
 * **The Feature-Based & Unidirectional Era (Word2Vec / GPT-1, 2013–2018)**
@@ -49,19 +51,13 @@ Depending on linguistic structures, computational constraints, or cross-modal re
 
 
 ```mermaid
-Pre-Training Sample Efficiency & Performance Frontier
-Low ┌─────────────────────────────────────────────────────────────
-│ • [Standard MLM (BERT)]
-│ (Computes loss only on the 15% masked token subsets)
-│
-GLUE│ • [Optimized Hyperparameter MLM (RoBERTa)]
-Score│ (Removes Next-Sentence Prediction, scales batch sizes and data)
-│
-│ • [Replaced Token Detection (ELECTRA)]
-High └───────────────────────────────────────┴─────────────────────
-(Computes binary classification loss across 100% of tokens)
-Low (Few Compute FLOPs) High (Massive Pre-training Scale)
-Training Compute / Wall-Clock Efficiency
+flowchart TB
+    subgraph "Pre-Training Sample Efficiency & Performance Frontier"
+        BERT["Standard MLM (BERT)<br>(Computes loss only on the 15% masked token subsets)"]
+        RoBERTa["Optimized Hyperparameter MLM (RoBERTa)<br>(Removes Next-Sentence Prediction, scales batch sizes and data)"]
+        ELECTRA["Replaced Token Detection (ELECTRA)<br>(Computes binary classification loss across 100% of tokens)"]
+        BERT --> RoBERTa --> ELECTRA
+    end
 ```
 
 ---

@@ -26,15 +26,15 @@ The implementation of self-supervised representation learning has transitioned f
 
 The core architecture of MLM parameterizes a network to predict a categorical distribution over a vocabulary for corrupted positions.
 
-### The Objective Function
-Let $X = (x_1, x_2, \dots, x_n)$ be an input sequence. A subset of indices $M$ is chosen to be masked. The modified corrupted sequence is denoted as $\tilde{X}$. The MLM objective minimizes the negative log-likelihood of the true masked tokens:
-$$\mathcal{L}_{\text{MLM}}(\theta) = - \sum_{i \in M} \log P(x_i \mid \tilde{X}; \theta)$$
+- ### The Objective Function
+  Let $X = (x_1, x_2, \dots, x_n)$ be an input sequence. A subset of indices $M$ is chosen to be masked. The modified corrupted sequence is denoted as $\tilde{X}$. The MLM objective minimizes the negative log-likelihood of the true masked tokens:
+  $$\mathcal{L}_{\text{MLM}}(\theta) = - \sum_{i \in M} \log P(x_i \mid \tilde{X}; \theta)$$
 
-### The 80-10-10 Corruption Rule
-* **Mechanism:** To mitigate discrepancies between pre-training (where `[MASK]` tokens exist) and fine-tuning (where they do not), the 15% selected tokens are processed as follows:
-  * **80%** of the time: Replaced with the literal `[MASK]` token.
-  * **10%** of the time: Replaced with a random word from the vocabulary.
-  * **10%** of the time: Kept entirely unchanged to bias representations toward real tokens.
+- ### The 80-10-10 Corruption Rule
+  * **Mechanism:** To mitigate discrepancies between pre-training (where `[MASK]` tokens exist) and fine-tuning (where they do not), the 15% selected tokens are processed as follows:
+    * **80%** of the time: Replaced with the literal `[MASK]` token.
+    * **10%** of the time: Replaced with a random word from the vocabulary.
+    * **10%** of the time: Kept entirely unchanged to bias representations toward real tokens.
 
 ---
 

@@ -4,7 +4,7 @@ Mitigating the absence of [MASK] in fine-tuning.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Pre-train with MASK] --> B[Fine-tune without MASK]
-`
+```

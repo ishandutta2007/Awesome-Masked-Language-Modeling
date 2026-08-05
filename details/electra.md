@@ -4,7 +4,7 @@ Using a generator-discriminator setup.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Generator] --> B[Discriminator]
-`
+```

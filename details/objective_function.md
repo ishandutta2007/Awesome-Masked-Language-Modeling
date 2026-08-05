@@ -4,7 +4,7 @@ Minimizing negative log-likelihood of masked tokens.
 
 ## Diagram
 
-`mermaid
+```mermaid
 math
  \mathcal{L} = -\sum \log P(x_i | 	ilde{X})
-`
+```

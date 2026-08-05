@@ -4,7 +4,7 @@ Applying MLM to image patches.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Image Patches] --> B[Masking 75%] --> C[Reconstruction]
-`
+```

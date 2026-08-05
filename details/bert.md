@@ -4,8 +4,8 @@ The introduction of bidirectional context via masking.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Input] --> B[Masking 15%]
  B --> C[Bidirectional Context]
-`
+```

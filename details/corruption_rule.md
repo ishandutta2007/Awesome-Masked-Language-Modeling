@@ -4,9 +4,9 @@
 
 ## Diagram
 
-`mermaid
+```mermaid
 pie
  "MASK" : 80
  "Random" : 10
  "Original" : 10
-`
+```

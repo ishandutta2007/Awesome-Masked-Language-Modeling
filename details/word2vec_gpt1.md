@@ -4,7 +4,7 @@ A shift from static to contextual but unidirectional.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Static Vectors] --> B[Unidirectional Context]
-`
+```

@@ -4,7 +4,7 @@ Applying MLM to genomic and amino acid sequences.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph LR
  A[DNA/Protein] --> B[Masked Sequence] --> C[Prediction]
-`
+```

@@ -4,7 +4,7 @@ Handling O(N^2) complexity with sparse attention.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph TD
  A[Dense O(N^2)] --> B[Sparse O(N)]
-`
+```

@@ -4,7 +4,7 @@ Masking contiguous spans instead of subwords.
 
 ## Diagram
 
-`mermaid
+```mermaid
 graph LR
  A[Subword] --> B[Whole Word/Span]
-`
+```

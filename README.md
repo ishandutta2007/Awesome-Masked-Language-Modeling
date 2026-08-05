@@ -1,3 +1,5 @@
+![Banner](assets/banner.svg)
+
 # Awesome-Masked-Language-Modeling
 
 ## Awesome-Masked-Language-Modeling-Evolution: Masked Language Modeling: History, Progression, Variants, & Applications

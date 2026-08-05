@@ -7,12 +7,9 @@
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
-## Awesome-Masked-Language-Modeling
-<p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
-  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
-</p>-Evolution: Masked Language Modeling: History, Progression, Variants, & Applications
+
+
+## Evolution: Masked Language Modeling: History, Progression, Variants, & Applications
 
 **Masked Language Modeling (MLM)** represents a foundational paradigm shift in the self-supervised pre-training of natural language processing (NLP) models. Formally popularized by Devlin et al. (Google AI Language) in October 2018 ("BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"), MLM established a powerful bidirectional alternative to classic autoregressive (left-to-right) language modeling. Prior to MLM, language models were restricted to unidirectional contexts to prevent tokens from "seeing themselves" in upcoming layers. MLM inverted this practice by introducing a **cloze-style task**, corrupting a fixed percentage of input tokens and forcing the model to reconstruct them using both **left and right contexts simultaneously**, unlocking deep bidirectional representations.
 
